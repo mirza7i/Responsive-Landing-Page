@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container{
+    max-width: 360px;
+    margin: 0 auto;
+ 
+    display: flex;
+    min-height:100vh ;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 23px;
+    margin: 0 1em;
+    box-shadow: 0px 10px 20px hsl(220, 15%, 55% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+}
+.card img{
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    text-align: center;
+    padding: 22px 10px;
+    /* margin-top: 20px; */
+}
+.text h1{
+    font-size: 22px;
+    margin-bottom:15px;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;    
+}
+.text p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    line-height: 1.5;
+}    
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Tablet aur small screen pe container chhota ho jaye */
+    }
+
+    .text h1 {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%; /* Mobile pe aur adjust ho jaye */
+        padding: 10px;
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 13px;
+    }
+}
